@@ -1,0 +1,116 @@
+@import url('reset.css');
+@import url('typography.css');
+/*header*/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    background-image: linear-gradient(to right, #1383b7, #749ecb, #acbbdc, #d9dced, #ffffff);
+    color:white;
+}
+
+header p{
+    padding: 0.7rem;
+    display: flex;
+    align-items: center;
+    text-shadow: 1px 1px 1px #20546C;
+}
+
+header nav ul{
+    display: flex;
+   
+} 
+
+header nav ul li{
+    list-style: none;
+}
+
+header nav ul li a{
+    text-decoration: none;
+    padding: 1rem;
+    display:block;
+    color: #20546C;
+    font-weight: bold;
+}
+
+header nav ul li a:hover{
+    background:#20546C ;
+    color:white;
+}
+
+header p img{
+    width:26px;
+    height:26px;
+    margin: 0 0.2rem;
+}
+body{
+    background:  linear-gradient( rgba(79, 45, 220, 0.7), 
+    rgba(79, 45, 220, 0.7)),url("images/surf-wallpaper.jpg");
+}
+main{
+    background:yellowgreen ;
+    width: 60%;
+    margin: auto;
+    display: flex;
+    padding: 70px 0px;
+    border-radius:10px ;
+
+}
+.form-container{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 150px;
+}
+main > section{
+   width: 50%; 
+}
+form div{
+    margin: 5px 0;
+    /* margin-top: 5px ;
+    margin-bottom: 5px;
+    margin-left: 0px;
+    margin-right: 0px; */
+}
+/* a circle shape of the form */
+input,textarea{
+border-radius: 15px;
+border: none;
+/* show the placeholders  */
+padding: 5px;
+padding-left: 25px ;
+width: 200px;
+background: lightgrey;
+}
+.form-container h3{
+ color: purple;
+}
+button{
+    border-radius: 15px ;
+    border: none;
+    width: 200px;
+    padding: 5px 0px;
+    background:rgb(52, 35, 119) ;
+    color:white;
+    font-weight: bold;
+    margin-top: 10px ;
+}
+.img-container img{
+    width:50%;
+    margin-top: 50px;
+}
+.img-container{
+    text-align:center ;
+}
+/* relocate fontawesome icons */
+i{
+   position: relative; 
+   right: 200px;
+   /* font-size: 16px; */
+}
+
+footer{
+    background:#20546C ;
+    color:white;
+    text-align: center;
+    padding: 0.6rem 0;
+} 

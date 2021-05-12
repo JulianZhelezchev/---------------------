@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Surf School-Registration</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="style-register.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Sofia&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <p>
+            <span>SURF</span>
+            <img src="./images/snowboarding-solid.svg" alt="surf-man-picture">
+            <span>SCHOOL</span>  
+        </p>
+        <nav>
+            <ul>
+                <li><a href="index.html">HOME</a></li>      
+                <li><a href="blog.html">BLOG</a></li>  
+                <li><a href="register.html">REGISTER</a></li>  
+                <li><a href="contacts.html">CONTACTS</a></li> 
+            </ul>
+        </nav>
+    </header>
+	<main>
+		<h1>Register</h1>
+		<hr>
+		<form>
+			<label for="firstName">Name</label>
+			<input type="text" name="firstName" required="true" placeholder="Name">
+			<label for="lastName">Last Name</label>
+			<input type="text" name="lastName" required="true" placeholder="Last Name">
+			<label for="e-mail">E-mail</label>
+			<input type="text" name="e-mail" required="true" placeholder="E-mail">
+			<label for="birthday">Date of birth</label>
+			<input type="date" name="birthday" required="true" placeholder="Date of birth">
+			<label for="gender">Gender</label>
+			<div id="gender">
+				<input type="radio" name="gender" value="female">Female
+				<input type="radio" name="gender" value="male">Male
+			</div>
+			<label for="country">Country</label>
+			<select>
+				<option>Bulgaria</option>
+				<option>France</option>
+                <option>Spain</option>
+				<option>Japan</option>
+				<option>UK</option>
+                <option>Australia</option>
+                <option>USA</option>
+			</select>
+			<label for="interests">Choose a sport</label>
+			<select>
+				<option>Surfing</option>
+				<option>Swimming</option>
+				<option>Sailing</option>
+				<option>Sea fishing</option>
+				<option>Scuba diving</option>
+				<option>Windsurfing</option>
+			</select>
+			<label for="password">Password</label>
+			<input type="password" name="password" required="true" placeholder="Enter Passowrd">
+			<label for="passwordRepeat">Repeat Password</label>
+			<input type="password" name="passwordRepeat" required="true" placeholder="Enter Passowrd">
+			<label>
+     		 <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+    		</label>
+    		<label>
+    		<input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>
+    		</label>
+    		<div class="clearfix">
+      			<button type="button" class="cancelbtn">Cancel</button>
+     			<button type="submit" class="signupbtn">Sign Up</button>
+    		</div>
+		</form>
+	</main>
+	<footer>
+		<p>&copy;All rights reserved!</p>
+	</footer>
+</body>
+</html>
